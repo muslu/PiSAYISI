@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 muslu = u"yüksektepe"
 
+import logging
 import os
 import sys
-import logging
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -24,11 +24,7 @@ INSTALLED_APPS = (
 
 TINYMCE_DEFAULT_CONFIG = {
     'theme': 'advanced',
-    # 'theme_advanced_buttons1': "newdocument,|,bold,italic,underline,|,justifyleft,justifycenter,justifyright,fontselect,fontsizeselect,formatselect",
-    # 'theme_advanced_buttons2': "cut,copy,paste,|,bullist,numlist,|,outdent,indent,|,undo,redo,|,link,unlink,anchor,image,|,code,preview,|,forecolor,backcolor",
-    # 'theme_advanced_buttons3': "insertdate,inserttime,|,spellchecker,advhr,,removeformat,|,sub,sup,|,charmap,emotions",
     'plugins': "emotions,spellchecker,advhr,insertdatetime,preview,paste,table,media,directionality,style,xhtmlxtras,nonbreaking,pagebreak",
-
     'theme_advanced_buttons1': "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,formatselect,fontselect,fontsizeselect",
     'theme_advanced_buttons2': "cut,copy,paste,pastetext,pasteword,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
     'theme_advanced_buttons3': "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,ltr,rtl",
@@ -67,7 +63,7 @@ DATABASES = {
     'default': {
         'NAME': 'pisayisicomDB',
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'roootto',
+        'USER': 'muslu',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
