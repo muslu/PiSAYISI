@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4d73a5d-c233-4336-abb3-06be815b4b59" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apache2ornek.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pisayisicom/ornek_settings.py" afterPath="$PROJECT_DIR$/pisayisicom/ornek_settings.py" />
     </list>
     <ignored path="pisayisicom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,15 +37,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ornek_settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ornek_settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pisayisicom/ornek_settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
               <folding>
-                <element signature="e#47#56#0" expanded="true" />
+                <element signature="e#47#61#0" expanded="true" />
                 <element signature="e#446#3448#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apache2ornek.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apache2ornek.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4035">
+              <caret line="269" column="0" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,6 +101,7 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pisayisicom/ornek_settings.py" />
+        <option value="$PROJECT_DIR$/apache2ornek.conf" />
       </list>
     </option>
   </component>
@@ -479,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479314364242</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Örnek settings.py">
+      <created>1479314472628</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1479314472632</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -526,7 +544,8 @@
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="true" />
     <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="127" />
     <MESSAGE value="İlk yükleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="İlk yükleme" />
+    <MESSAGE value="Örnek settings.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Örnek settings.py" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -793,9 +812,17 @@
         <state relative-caret-position="270">
           <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
           <folding>
-            <element signature="e#47#56#0" expanded="true" />
+            <element signature="e#47#61#0" expanded="true" />
             <element signature="e#446#3448#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apache2ornek.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4035">
+          <caret line="269" column="0" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
