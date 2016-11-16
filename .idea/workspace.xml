@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4d73a5d-c233-4336-abb3-06be815b4b59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apache2ornek.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pisayisicom.iws" />
@@ -497,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479314472632</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Örnek Apache2 conf dosyası">
+      <created>1479315095158</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1479315095158</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -545,7 +551,8 @@
     <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="127" />
     <MESSAGE value="İlk yükleme" />
     <MESSAGE value="Örnek settings.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Örnek settings.py" />
+    <MESSAGE value="Örnek Apache2 conf dosyası" />
+    <option name="LAST_COMMIT_MESSAGE" value="Örnek Apache2 conf dosyası" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
