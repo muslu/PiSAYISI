@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
 
 
-PiDosyasi = "pi_100000.txt"
+PiDosyasi = "pi_100.txt"
 
 Okunanlar = None
 
-KacBasamak = 10000
-
 with open(PiDosyasi, 'r') as file :
-  Okunanlar = file.read()[0:KacBasamak].strip()
+  Okunanlar = file.read()
 
 
-for l in range(0,10):
-    print str(l) + " : " + str(Okunanlar.count(str(l)))
+for l in range(0,9):
+    print str(l) + ":" + str(Okunanlar.count(str(l)))
 

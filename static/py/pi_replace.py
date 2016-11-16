@@ -61,25 +61,21 @@ geometre_char = {
         900: 'צ',
         }
 
-        
+		
 
 PiDosyasi = "pi_100000.txt"
 
 Okunanlar = None
 
-KacBasamak = 10000
-
 with open(PiDosyasi, 'r') as file :
-  Okunanlar = file.read()[0:KacBasamak].strip()
+  Okunanlar = file.read()
 
 
-with open('pi_geometre.txt', 'w') as file:
+
+
+for key in sorted(geometre_char, reverse=True):
+    Okunanlar = Okunanlar.replace(str(key), str(geometre_char[key][0:1]))
     
-    for key in sorted(geometre, reverse=True):
-        Okunanlar = Okunanlar.replace(str(key), str(geometre[key][0:1]))
-        
-    file.write("{}\n".format(str(Okunanlar)))
-
 print Okunanlar
 
 

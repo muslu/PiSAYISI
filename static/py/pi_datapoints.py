@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-PiDosyasi = "pi_100.txt"
+PiDosyasi = "pi_100000.txt"
 
 Okunanlar = None
 
