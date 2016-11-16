@@ -1,0 +1,35 @@
+{% extends "gerekli.html" %}
+
+{% block orta %}
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                <p>Pi sayısının sonsuzluğunun ilahi bir anlam i&ccedil;erdiği d&uuml;ş&uuml;n&uuml;rsek her basamaktaki her rakamın bir anlamı olması gerekir.</p>
+                <p>Biliyoruz ki her basamak bir harfe &ccedil;evrilirse mutlaka hayatımızda s&ouml;ylediğimiz, duyduğumuz yada yazdığımız bir kelimeye belkide anlamlı c&uuml;mlelere denk gelmektedir. Hal b&ouml;yle olunca araştırma ve denemeleri her anlamda yapmak gerekir.</p>
+                <p>Benim en mistik olarak g&ouml;rd&uuml;ğ&uuml;m konu Pi sayısındaki rakamların eşleştirme yapılması i&ccedil;in İbrani harfleri ile &ccedil;evrilmesi ve bir anlam aranmasıdır.</p>
+                <p>Bu çalışmalar ile birlikte farklı yöntemler ile Pi sayısının esrarengiz ve mistik yolculuğuna aşağıdaki kategorilerde de inceleyebilirsiniz.</p>
+
+
+                {% for kategori in kategoriler %}
+                    <div class="post-preview">
+                        <a href="/{{ kategori.Link }}/kategorisi/">
+                            <h2 class="post-title">{{ kategori.Baslik }}</h2>
+                            <h3 class="post-subtitle">{{ kategori.Icerik|safe|truncatewords:30 }}</h3>
+                        </a>
+                    </div>
+                    <hr>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+
+{% endblock orta %}

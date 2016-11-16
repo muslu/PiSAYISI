@@ -1,0 +1,28 @@
+{% extends "gerekli.html" %}
+
+{% block orta %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <a href="/{{ kategori.Link }}/kategorisi/">{{ kategori.Baslik }}</a>
+                <hr>
+                {% for konu in kategori_detay %}
+                    <div class="post-preview">
+                        <a href="/{{ konu.Kategorisi.Link }}/{{ konu.Link }}/konusu/">
+                            <h2 class="post-title">{{ konu.Baslik }}</h2>
+                        </a>
+                        <p class="post-subtitle">{{ konu.Icerik|safe }}</p>
+
+                    </div>
+                    <hr>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+{% endblock orta %}

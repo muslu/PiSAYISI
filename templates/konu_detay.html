@@ -1,0 +1,40 @@
+{% extends "gerekli.html" %}
+
+{% block orta %}
+
+
+    <header class="intro-header" style="color: #000000;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <p>
+                            <a href="/{{ konu_detay.AltKategorisi.Kategorisi.Link }}/kategorisi/">{{ konu_detay.AltKategorisi.Kategorisi.Baslik }}</a>
+                            /
+                            <a href="/{{ konu_detay.AltKategorisi.Kategorisi.Link }}/{{ konu_detay.AltKategorisi.Link }}/konusu/">{{ konu_detay.AltKategorisi.Baslik }}</a>
+                        </p>
+                        <h1>{{ konu_detay.Baslik }}</h1>
+                        <span class="meta">Yazar: <a href="#">{{ konu_detay.Yazar }}</a> {{ konu_detay.IslemTarihi }}</span>
+                        <time datetime="{{ konu_detay.IslemTarihi|date:'Y-m-d H:i:s T' }}">{{ konu_detay.IslemTarihi }}</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <article>
+        <div class="container sigdir">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>{{ konu_detay.Icerik|safe }}</p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+
+{% endblock orta %}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <title>Pi π Sayısı, İlk {{ basamak }} basamağı ve {{ tur|title }} çizimi hakkında eğlenceli zaman geçirilecek çizimler, müzikal dinletiler, resimler, makaleler, haşiyeler, dipnotlar ve şerhler.</title>
+
+    <script type="text/javascript" src="/static/canvasjs.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#basamak').val('{{ basamak }}');
+            $('#tur').val('{{ tur }}');
+
+
+            var options = {
+                animationEnabled: true,
+                zoomEnabled: true,
+                axisX: {
+                    title: "Basamak",
+                    minimum: 1,
+                    maximum: '{{ basamak }}',
+                    titleFontColor: "#5bc0de",
+                    lineThickness: 1
+                },
+                axisY: {
+                    title: "Rakam",
+                    valueFormatString: "#",
+                    titleFontColor: "#5bc0de",
+                    lineThickness: 1,
+                    maximum: 9,
+
+                },
+                data: [
+                    {
+                        color: "#000000",
+                        markerSize: 5,
+                        markerColor: "red",
+                        showInLegend: false,
+                        markerType: "circle", //"triangle", //"none", "circle", "square", "cross", "triangle"
+                        toolTipContent: "<span style='\"'color: {color};'\"'><strong>Basamak: </strong></span>{x}<br/><span style='\"'color: {color};'\"'><strong>Rakam: </strong></span>{y}",
+                        type: '{{ tur }}', //line, area, column, pie
+                        dataPoints: {{ datapoint }}
+                    }
+                ]
+            };
+
+            $("#chartContainer").CanvasJSChart(options);
+
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="text-center">
+        <h1>πthon ile eğlence</h1>
+        <p>Pi (π) Sayısı, İlk {{ basamak }} basamağı ve {{ tur|title }} çizimi</p>
+    </div>
+    <div class="row">
+        <form>
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <select class="selectpicker form-control" name="tur" id="tur">
+                        <option value="0">Chart...</option>
+                        <option value="area">Area</option>
+                        <option value="column">Column</option>
+                        <option value="line">Line</option>
+                        <option value="scatter">Scatter</option>
+                        <option value="spline">Spline</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <select class="selectpicker form-control" name="basamak" id="basamak">
+                        <option value="0">Basamak...</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="35">35</option>
+                        <option value="40">40</option>
+                        <option value="45">45</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="250">250</option>
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                        <option value="2000">2000</option>
+                        <option value="2500">2500</option>
+                        <option value="5000">5000</option>
+                        <option value="10000">10000</option>
+                        <option value="50000">50000</option>
+                        <option value="100000">100000</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-info">Göster</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</div>
+</body>
+</html>

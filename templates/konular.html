@@ -1,0 +1,35 @@
+{% extends "gerekli.html" %}
+
+{% block orta %}
+
+
+    <div class="container sigdir">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <a href="/{{ altkategori.Kategorisi.Link }}/kategorisi/">{{ altkategori.Kategorisi.Baslik }}</a> /
+                <a href="/{{ altkategori.Kategorisi.Link }}/{{ altkategori.Link }}/konusu/">{{ altkategori.Baslik }}
+                </a>
+                <hr>
+                {% for konu in konular %}
+                    <div class="post-preview">
+                        <a href="/{{ konu.AltKategorisi.Kategorisi.Link }}/{{ konu.AltKategorisi.Link }}/{{ konu.Link }}/konu-detayi/">
+                            <h2 class="post-title">{{ konu.Baslik }}</h2>
+                        </a>
+                        <h3 class="post-subtitle">{{ konu.Icerik|safe|truncatechars:350 }}</h3>
+
+                        <p class="post-meta">
+                            Yazar <a href="/yazar/?{{ konu.Yazar }}">{{ konu.Yazar }}</a>
+                            <time datetime="{{ konu.IslemTarihi|date:'Y-m-d H:i:s T' }}">{{ konu.IslemTarihi }}</time>
+                        </p>
+                    </div>
+                    <hr>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+{% endblock orta %}

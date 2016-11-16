@@ -1,0 +1,47 @@
+{% extends "gerekli.html" %}
+
+{% block orta %}
+
+
+    <div class="container sigdir">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                <hr>
+
+                <div class="post-preview">
+                    <h2>π</h2>
+
+                    <h3 class="post-subtitle">Hakkımızda</h3>
+
+                    <p class="post-meta">
+                        Merhabalar;
+                        <br> <br>Bu site Pi sayısı hakkında meraklar ve bilimsel araştırmalar için hazırlanmaktadır.
+                        <br><br>Yazılanlar ve alıntı yapılan konular yazarların hakları altındadır.
+                        <br><br>Bu sitede paylaşılan konuların bilimsel anlamları olmayabilir. Bazı çalışmalar sadece meraktan yapılmıştır.
+                        <br><br>Yerli ve yabancı tüm makaleler, şerhler, dipnotlar ve haşiyeler paylaşılacaktır.
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        ** HAŞİYE: Sahife kenarına veya altına yazılan izah. Bir kitabın izah ve şerhini yapan yazı. Kenar, pervaz.
+                        <br>
+                        <br>
+                        ** ŞERH: Açma, genişletme. Açıklama. Anlaşılanı anlatma. Bir yazı veya konuşmayı kolay anlaşılması için izah etme, tafsil etme.
+
+                        <time datetime="{{ now|date:'Y-m-d H:i:s T' }}">{{ now }}</time>
+                        </br>
+                </div>
+                <hr>
+
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+{% endblock orta %}
