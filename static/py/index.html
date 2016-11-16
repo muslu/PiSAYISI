@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Muslu YÜKSEKTEPE | all about me!</title>
+    <meta name="description" content="Personal website of Muslu YÜKSEKTEPE"/>
+
+    <link rel="stylesheet" href="/media/ob/outdatedbrowser.min.css">
+    <script src="/media/ob/outdatedbrowser.min.js"></script>
+    <link rel="author" href="/media/js/humans.txt" type="text/plain">
+    <meta name="author" content="musluyuksektepe"/>
+    <link rel="shortcut icon" href="/media/img/muslulogo.png">
+    <link rel="stylesheet" type="text/css" href="/media/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="/media/css/demo.css"/>
+    <link rel="stylesheet" href="/media/fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/media/css/tooltip-round.css"/>
+
+        <!-- Facebook -->
+        <meta property="og:title" content="Muslu YÜKSEKTEPE" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="www.muslu.org/img/muslulogo.png" />
+        <meta property="og:url" content="http://www.muslu.org" />
+        <meta property="og:description" content="who is muslu?" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="muslu YÜKSEKTEPE" />
+        <meta name="twitter:description" content="who is muslu?" />
+        <meta name="twitter:image" content="www.muslu.org/img/muslulogo.png" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <meta name="google-site-verification" content="abMHoe4FztdmROtkcBpM2MWx9koFlqreHHRIAW1qZzY" />
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <style>
+
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('/media/img/hourglass.svg') 50% 50% no-repeat #47c9af;
+        }
+    </style>
+
+
+</head>
+
+
+<body class="color-2">
+
+<div id="outdated"></div>
+
+<div class="loader"></div>
+
+
+<div class="container">
+
+    <div class="content">
+
+
+        <header class="codrops-header">
+            <img src="/media/img/muslulogo.png" width="50%">
+            <h1>Muslu YÜKSEKTEPE</h1>
+        </header>
+
+
+        <div class="dummy dummy-menu">
+            <ul>
+                <li><a class="tooltip tooltip-effect-1" href="/">Home<span class="tooltip-content"><i class="fa fa-fw fa-home"></i></span></a></li>
+                <li><a class="tooltip tooltip-effect-2" href="aboutme.html">About me<span class="tooltip-content"><i class="fa fa-fw fa-user"></i></span></a></li>
+                <li><a class="tooltip tooltip-effect-3" href="photography.html">Photography<span class="tooltip-content"><i class="fa fa-fw fa-camera-retro"></i></span></a></li>
+                <li><a class="tooltip tooltip-effect-4" href="work.html">Work<span class="tooltip-content"><i class="fa fa-fw fa-briefcase"></i></span></a></li>
+                <li><a class="tooltip tooltip-effect-5" href="contact.html">Contact<span class="tooltip-content"><i class="fa fa-fw fa-envelope"></i></span></a></li>
+                <li><a class="tooltip tooltip-effect-6" href="http://www.grafson.com" target="_blank">Grafson<span class="tooltip-content"><i class="fa fa-line-chart"></i></span></a></li>
+                <li><a class="tooltip tooltip-effect-6" href="http://www.pisayısı.com" target="_blank">Pi Sayısı<span class="tooltip-content"><i class="fa fa-line-chart"></i></span></a></li>
+
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script>
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function () {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+
+    addLoadEvent(function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform',
+            languagePath: '/media/ob/lang/en.html'
+        })
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    })
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26710178-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
